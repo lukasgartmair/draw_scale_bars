@@ -45,3 +45,8 @@ echo "$ytext"
 # add a bar at the bottom
 convert -background 'graya(85%, 0.5)'  -gravity south -splice 0x$height_border $image_name $image'_with_border.eps'
 convert -stroke black -strokewidth 2 -pointsize $point_size -gravity south -draw "line $lsx,$ly $lex,$ly  text 0,$ytext '$scale_label $unit'" $image'_with_border.eps' $image'_with_scalebar.eps'
+
+# delete the border image
+
+rm -rf $image'_with_border.eps'
+

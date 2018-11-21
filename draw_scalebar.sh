@@ -50,3 +50,4 @@ convert -stroke black -strokewidth 2 -pointsize $point_size -gravity south -draw
 
 rm -rf $image'_with_border.eps'
 
+echo "test"
